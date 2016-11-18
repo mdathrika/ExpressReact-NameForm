@@ -1,0 +1,17 @@
+{
+  "name": "ExpressReact-NameForm",
+  "version": "0.1.0",
+  "private": true,
+
+  "dependencies": {
+    "express": "^4.14.0",
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0",
+    "babelify": "^6.3.0",
+    "browserify": "^8.0.3",
+    "express-react-views": "^0.10.2"
+  },
+  "scripts": {
+    "start": "browserify -t babelify --standalone client src/views/client.js src/views/NameForm.js -o src/public/client.js && node src/index.js"
+  }
+}
